@@ -1,0 +1,281 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+/* NAVBAR */
+
+.nav-links li a:hover {
+  color: #050000;
+}
+
+/* HERO */
+.hero {
+  margin-top: 70px;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.hero-text {
+     position: absolute;
+    bottom: 30px;
+    left: 10%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+
+/* ====== ABOUT ====== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.about-text {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* ====== DIVIDER ====== */
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 40px auto;
+}
+
+/* ====== MENU SECTION ====== */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.menu-content {
+  flex: 1;
+}
+
+.menu-category {
+  margin-top: 20px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-item-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.menu-item-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.menu-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* ====== CONTACT SECTION ====== */
+.contact-container {
+  padding: 60px 0;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-address {
+  font-weight: bold;
+  color: #607d8b;
+  margin: 10px 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  height: 50px;
+  width: 180px;
+  background-color: lightgray;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+/* ====== BACK TO TOP ====== */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  background: #0a1590;
+  color: white;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 55px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #333;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 992px) {
+  .hero-text {
+    font-size: 45px;
+  }
+  .about-container,
+  .menu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content,
+  .menu-content {
+    max-width: 100%;
+  }
+  .menu-image img,
+  .about-image img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-image {
+    height: 65vh;
+  }
+
+  .hero-text {
+    font-size: 36px;
+    padding: 8px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .about-text,
+  .menu-item-description,
+  .contact-info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .hero-text {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
